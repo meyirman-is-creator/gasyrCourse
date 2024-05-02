@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literature</title>
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwindCDNmodule.js"></script>
+  </head>
+  <body class="bg-[#fafafa]">
+    <header class="header flex justify-between shadow-lg bg-white">
+      <div
+        class="header__logo w-[345px] pl-[60px] h-[90px] items-center flex border-r-[1px] border-[#C6C6C6]"
+      >
+        <a href="#" class="header__logo-link">
+          <img
+            src="./assets/GasyrLogoBlack.png"
+            alt=""
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+      <div
+        class="header__avatar border-l-[1px] border-[#C6C6C6] pl-[20px] pr-[75px] flex h-[90px] items-center"
+      >
+        <img
+          src="./assets/avatar.png"
+          alt=""
+          class="avatar-photo w-[60px] h-[60px] mr-[13px]"
+        />
+        <div class="avatar__info mr-[30px]">
+          <div
+            class="avatar__name text-black-main text-[20px] leading-[24px] font-bold"
+          >
+            Александр О.
+          </div>
+          <div
+            class="avatar__role leading-[20px] text-black-main font-medium text-[16px]"
+          >
+            Студент
+          </div>
+        </div>
+        <button class="avatar__more">
+          <img
+            src="./assets/moreAboutAvatar.png"
+            alt=""
+            class="avatar__more-icon w-[24px] h-[24px]"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="main flex">
+      <div
+        class="main-sidebar w-[345px] pl-[60px] pt-[33px] pr-[30px] bg-white shadow-[0px_4px_20px_0px_#00000014] min-h-full overflow-y-auto"
+      >
+        <ul class="sidebar flex flex-col space-y-6">
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between mb-[24px]"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/directoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-accent-red text-[18px] leading-[22px]"
+                  >Модуль 1</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/arrowButtonIcon.png"
+                alt=""
+              />
+            </a>
+            <ul class="sidebar__active-item pl-[36px] flex flex-col space-y-5">
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-bold text-[18px] leading-[22px] text-black-main mb-[12px] block"
+                  >Введение</a
+                >
+                <ul
+                  class="sidebar__active_actItem flex flex-col space-y-3 pl-[36px]"
+                >
+                  <li
+                    class="font-regular text-4 leading-5 text-black-main flex items-center"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-accent-red mr-2"></div>
+                    <span>Лекция</span>
+                  </li>
+                  <li
+                    class="font-regular text-4 leading-5 text-black-main flex items-center"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-accent-red mr-2"></div>
+                    <span>Тестирование</span>
+                  </li>
+                  <li
+                    class="font-regular text-4 leading-5 text-black-main flex items-center"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-accent-red mr-2"></div>
+                    <span>Литература</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-regular text-[18px] leading-5 text-black-main"
+                  >Циклы</a
+                >
+              </li>
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-regular text-[18px] leading-5 text-black-main"
+                  >Математика</a
+                >
+              </li>
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-regular text-[18px] leading-5 text-black-main"
+                  >Зефирка</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/directoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-accent-red text-[18px] leading-[22px]"
+                  >Модуль 2</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/arrowButtonActiveIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notTrophyIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Финал</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="literature pl-[60px] pt-[60px]">
+        <div
+          class="literature__container w-[995px] bg-white shadow-[0px_4px_20px_0px_#00000014] rounded-md pb-9"
+        >
+          <div
+            class="literature__header pb-[42px] border-b-[1px] px-9 pt-9 pb-[46px] border-[#D8D8D8]"
+          >
+            <div
+              class="literature__subtitle font-bold text-black-main text-4 leading-5 uppercase"
+            >
+              Урок 1 - Модуль: основы права
+            </div>
+            <div
+              class="literature__title leading-[52px] text-[42px] text-accent-red font-bold"
+            >
+              Литература
+            </div>
+          </div>
+          <ul
+            class="literature__questions pt-[32px] pl-9 pr-[50px] flex flex-col space-y-2.5 text-5 text-black-main font-bold leading-6"
+          >
+            <li
+              class="literature__list-item border border-[1px] border-[#D8D8D8] rounded-sm px-4 h-[56px] flex items-center"
+            >
+              <img src="./assets/closeBookIcon.png" class="mr-5" alt="" /><a
+                href="#"
+                class="literature__list-link underline font-semibold text-4 leading-5.5 text-black-main hover:no-underline"
+                >Учебник SAT от ms. Salt and Nult</a
+              >
+            </li>
+            <li
+              class="literature__list-item border border-[1px] border-[#D8D8D8] rounded-sm px-4 h-[56px] flex items-center"
+            >
+              <img src="./assets/filmIcon.png" class="mr-5" alt="" /><a
+                href="#"
+                class="literature__list-link underline font-semibold text-4 leading-5.5 text-black-main hover:no-underline"
+                >Фильм “Не шутите с Зоханом” на английском языке</a
+              >
+            </li>
+            <li
+              class="literature__list-item border border-[1px] border-[#D8D8D8] rounded-sm px-4 h-[56px] flex items-center"
+            >
+              <img src="./assets/documentIcon.png" class="mr-5" alt="" /><a
+                href="#"
+                class="literature__list-link underline font-semibold text-4 leading-5.5 text-black-main hover:no-underline"
+                >Текстовый документ с доп. заданиями</a
+              >
+            </li>
+            <li
+              class="literature__list-item border border-[1px] border-[#D8D8D8] rounded-sm px-4 h-[56px] flex items-center"
+            >
+              <img src="./assets/audioDocumentIcon.png" class="mr-5" alt="" /><a
+                href="#"
+                class="literature__list-link underline font-semibold text-4 leading-5.5 text-black-main hover:no-underline"
+                >Аудио-файлы для задании</a
+              >
+            </li>
+            
+          </ul><button
+              class="block mx-auto mt-[56px] block lg:block  literature-btn hover:bg-accent-red hover:text-white text-center px-[64px] py-[26px] text-5 leading-7 font-semibold text-accent-red border-[1px] rounded-sm inline"
+            >
+              Перейти к следующему уроку
+            </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
