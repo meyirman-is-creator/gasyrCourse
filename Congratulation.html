@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congratulation</title>
+    <link rel="stylesheet" href="./font.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwindCDNmodule.js"></script>
+  </head>
+  <body class="bg-[#fafafa]">
+    <header class="header flex justify-between shadow-lg bg-white">
+      <div
+        class="header__logo w-[345px] pl-[60px] h-[90px] items-center flex border-r-[1px] border-[#C6C6C6]"
+      >
+        <a href="#" class="header__logo-link">
+          <img
+            src="./assets/GasyrLogoBlack.png"
+            alt=""
+            class="header__logo-img"
+          />
+        </a>
+      </div>
+      <div
+        class="header__avatar border-l-[1px] border-[#C6C6C6] pl-[20px] pr-[75px] flex h-[90px] items-center"
+      >
+        <img
+          src="./assets/avatar.png"
+          alt=""
+          class="avatar-photo w-[60px] h-[60px] mr-[13px]"
+        />
+        <div class="avatar__info mr-[30px]">
+          <div
+            class="avatar__name text-black-main text-[20px] leading-[24px] font-bold"
+          >
+            Александр О.
+          </div>
+          <div
+            class="avatar__role leading-[20px] text-black-main font-medium text-[16px]"
+          >
+            Студент
+          </div>
+        </div>
+        <button class="avatar__more">
+          <img
+            src="./assets/moreAboutAvatar.png"
+            alt=""
+            class="avatar__more-icon w-[24px] h-[24px]"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="main flex">
+      <div
+        class="main-sidebar w-[345px] pl-[60px] pt-[33px] pr-[30px] bg-white shadow-[0px_4px_20px_0px_#00000014] min-h-full overflow-y-auto"
+      >
+        <ul class="sidebar flex flex-col space-y-6">
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between mb-[24px]"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/directoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-accent-red text-[18px] leading-[22px]"
+                  >Модуль 1</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/arrowButtonIcon.png"
+                alt=""
+              />
+            </a>
+            <ul class="sidebar__active-item pl-[36px] flex flex-col space-y-5">
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-bold text-[18px] leading-[22px] text-black-main mb-[12px] block"
+                  >Введение</a
+                >
+                <ul
+                  class="sidebar__active_actItem flex flex-col space-y-3 pl-[36px]"
+                >
+                  <li
+                    class="font-regular text-4 leading-5 text-black-main flex items-center"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-accent-red mr-2"></div>
+                    <span>Лекция</span>
+                  </li>
+                  <li
+                    class="font-regular text-4 leading-5 text-black-main flex items-center"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-accent-red mr-2"></div>
+                    <span>Тестирование</span>
+                  </li>
+                  <li
+                    class="font-regular text-4 leading-5 text-black-main flex items-center"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-accent-red mr-2"></div>
+                    <span>Литература</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-regular text-[18px] leading-5 text-black-main"
+                  >Циклы</a
+                >
+              </li>
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-regular text-[18px] leading-5 text-black-main"
+                  >Математика</a
+                >
+              </li>
+              <li class="sidebar__active-item-el">
+                <a
+                  href="#"
+                  class="sidebar__active-item-link font-regular text-[18px] leading-5 text-black-main"
+                  >Зефирка</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/directoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-accent-red text-[18px] leading-[22px]"
+                  >Модуль 2</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/arrowButtonActiveIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notVisibleDirectoryIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Модуль 3</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="sidebar__module">
+            <a
+              href="#"
+              class="sidebar__module-link flex items-center justify-between"
+            >
+              <div class="module-items flex items-center">
+                <img
+                  src="./assets/notTrophyIcon.png"
+                  alt=""
+                  class="sidebar__module-icon mr-[12px]"
+                />
+                <span
+                  class="font-bold text-[#8D8D8D] text-[18px] leading-[22px]"
+                  >Финал</span
+                >
+              </div>
+
+              <img
+                class="sidebar__module-open"
+                src="./assets/notVisibleKeyIcon.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="congratulation pl-[60px] pt-[60px] flex flex-col space-y-5">
+        <div
+          class="pl-[200px] congratulations w-[100%] h-[300px] rounded-md bg-center bg-no-repeat flex items-center"
+          style="background-image: url('./assets/conguratulationBG.png')"
+        >
+          <div class="congratulation-precent flex w-full items-center">
+            <div class="congratulation-precent__content flex flex-col">
+              <div
+                class="congratulation__text text-[42px] leading-[52px] mb-[15px] font-semibold text-white max-w-[380px]"
+              >
+                Поздравляем с окончанием курса!
+              </div>
+              <div
+                class="button py-[21px] px-[54.5px] border border-[1px] border-white text-white w-[300px] rounded-sm text-4 leading-5.5 font-semibold hover:bg-white hover:text-accent-red"
+              >
+                Получить сертификат
+              </div>
+            </div>
+            <div
+              class="congratulation__precent-info w-[273px] h-[273px] border-[1px] border-white rounded-full flex flex-col items-center justify-center"
+            >
+              <span
+                class="font-semibold text-[100px] text-white leading-[100px]"
+                >100%</span
+              >
+              <span class="text-4 leading-[22px] font-medium text-white"
+                >Финальное тестирование</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="video-container relative">
+          <video
+            width="995"
+            height="520"
+            poster="./assets/sakenImg.png"
+            class="rounded-md"
+            controlsList="nodownload"
+          >
+            <source src="movie.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div
+            class="video__contentplay-button text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <button>
+              <img src="./assets/bigPlayIcon.png" alt="" />
+            </button>
+            <p class="mt-5 video__content-text text-[32px] leading-10 font-semibold text-white">Поздравление от Сакена</p>
+          </div>
+        </div>
+        <div class="congratulation__achievemen pt-[32px] px-[80px] pb-[52px] bg-white shadow-[0px_4px_20px_0px_#00000014] rounded-md ">
+            <div class="congratulation__achievement-title font-bold text-black-main text-[36px] text-center leading-[58px]">Вы справились со всем</div>
+            <div class="congratulation__achievement-content flex flex-wrap gap-3 mt-2">
+                <div class="congratulation__achievement-item px-5 h-[76px] w-[270px] rounded-md flex items-center gap-5 border border-[1px] border-[#C6C6C6]"><img src="./assets/timeIcon.png" alt=""><span class="text-[20px] text-accent-red leading-[32px] font-medium">128 часов</span> </div>
+                <div class="congratulation__achievement-item px-5 h-[76px] w-[270px] rounded-md flex items-center gap-5 border border-[1px] border-[#C6C6C6]"><img src="./assets/openBookIcon.png" alt=""><span class="text-[20px] text-accent-red leading-[32px] font-medium">12 модулей</span> </div>
+                <div class="congratulation__achievement-item px-5 h-[76px] w-[270px] rounded-md flex items-center gap-5 border border-[1px] border-[#C6C6C6]"><img src="./assets/penIcon.png" alt=""><span class="text-[20px] text-accent-red leading-[32px] font-medium">60 уроков</span> </div>
+                
+            </div>
+        </div>
+        <div
+          class="congratulation__container w-[995px] bg-white shadow-[0px_4px_20px_0px_#00000014] rounded-md"
+        >
+          <div
+            class="congratulation__header pb-[42px] border-b-[1px] px-9 pt-9 pb-[46px] border-[#D8D8D8]"
+          >
+            <div
+              class="congratulation__subtitle font-bold text-black-main text-4 leading-5 uppercase"
+            >
+              Урок 1 - Модуль: основы права
+            </div>
+            <div
+              class="congratulation__title leading-[52px] text-[42px] text-accent-red font-bold"
+            >
+              Тестирование по лекции
+            </div>
+          </div>
+          <ul
+            class="congratulation__questions pt-[42px] pl-9 pr-[50px] pb-20 flex flex-col space-y-[36px] text-5 text-black-main font-bold leading-6"
+          >
+            <li class="congratulation__question-item">
+              <div class="congratulation__question-title mb-[24px]">
+                1. Место для вопроса и другого текста?
+              </div>
+              <div
+                class="congratulation__question-answers grid gap-2.5 grid-cols-2"
+              >
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer"
+                      value="Инженер - техник 1"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] justify-between border-[1px] border-[#D8D8D8] bg-[#56C024] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      checked
+                      type="radio"
+                      name="answer"
+                      value="Инженер - техник 2"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-white checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span class="text-white">Инженер - техник</span>
+                  </div>
+
+                  <div class="answer-icon">
+                    <img src="./assets/checkIcon.png" alt="" />
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer"
+                      value="Инженер - техник 3"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer"
+                      value="Инженер - техник 4"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="congratulation__question-item">
+              <div class="congratulation__question-title mb-[24px]">
+                2. Место для вопроса и другого текста?
+              </div>
+              <div
+                class="congratulation__question-answers grid gap-2.5 grid-cols-2"
+              >
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer1"
+                      value="Инженер - техник 1"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer1"
+                      value="Инженер - техник 2"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] justify-between bg-accent-red text-white border-white h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer1"
+                      value="Инженер - техник 3"
+                      checked
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-[#d8d8d8] checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                  <div class="answer__icon">
+                    <img src="./assets/falseIcon.svg" alt="" />
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer1"
+                      value="Инженер - техник 4"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>Инженер - техник</span>
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="congratulation__question-item">
+              <div class="congratulation__question-title mb-[24px]">
+                3. Место для вопроса и другого текста?
+              </div>
+              <div
+                class="congratulation__question-photo w-full flex items-center h-[226px] border-[1px] border-[#D8D8D8] justify-center mb-[20px]"
+              >
+                <img src="./assets/patterOfMath.png" alt="" />
+              </div>
+              <div
+                class="congratulation__question-answers grid gap-2.5 grid-cols-2"
+              >
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer3"
+                      value="32"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>32</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer3"
+                      value="11"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>11</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer3"
+                      value="26"
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-accent-red checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>26</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] justify-between bg-accent-red text-white border-[#D8D8D8] h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      type="radio"
+                      name="answer3"
+                      value="16"
+                      checked
+                      class="appearance-none border border-[#D8D8D8] rounded-full checked:bg-white checked:border-none w-5 h-5 mr-[26px]"
+                    />
+                    <span>16</span>
+                  </div>
+                  <div class="answer__icon">
+                    <img src="./assets/falseIcon.svg" alt="" />
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="congratulation__question-item">
+              <div class="congratulation__question-title mb-[24px]">
+                4. Место для вопроса и другого текста?<br /><span
+                  class="text-black-main font-regular text-4 leading-5 mt-1"
+                  >Можно выбрать несколько</span
+                >
+              </div>
+              <div
+                class="congratulation__question-answers grid gap-2.5 grid-cols-2"
+              >
+                <label
+                  class="answer w-[450px] justify-between bg-[#56C024] border-[1px] border-gray-300 h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer relative"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      name="answer4"
+                      type="checkbox"
+                      id="custom-checkbox"
+                      class="hidden peer"
+                      checked
+                    />
+                    <div
+                      class="w-5 h-5 bg-white border-2 border-gray-300 rounded cursor-pointer peer-checked:bg-black flex justify-center items-center peer-checked:border-transparent mr-[26px]"
+                    >
+                      <svg
+                        class="hidden peer-checked:block text-white w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 011.414 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L10 12.586l7.293-7.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <span class="text-white flex-1">Инженер - техник</span>
+                  </div>
+                  <div class="answer__icon">
+                    <img src="./assets/falseIcon.svg" alt="" />
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] border-[1px] border-gray-300 h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer relative"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      name="answer4"
+                      type="checkbox"
+                      id="custom-checkbox"
+                      class="hidden peer"
+                    />
+                    <div
+                      class="w-5 h-5 bg-white border-2 border-gray-300 rounded cursor-pointer peer-checked:bg-red-600 flex justify-center items-center peer-checked:border-transparent mr-[26px]"
+                    >
+                      <svg
+                        class="hidden peer-checked:block text-white w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 011.414 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L10 12.586l7.293-7.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <span class="text-gray-700 flex-1">Инженер - техник</span>
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] justify-between bg-accent-red border-[1px] border-gray-300 h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer relative"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      name="answer4"
+                      type="checkbox"
+                      id="custom-checkbox"
+                      class="hidden peer"
+                      checked
+                    />
+                    <div
+                      class="w-5 h-5 bg-white border-2 border-gray-300 rounded cursor-pointer peer-checked:bg-black flex justify-center items-center peer-checked:border-transparent mr-[26px]"
+                    >
+                      <svg
+                        class="hidden peer-checked:block text-white w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 011.414 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L10 12.586l7.293-7.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <span class="text-white flex-1">Инженер - техник</span>
+                  </div>
+                  <div class="answer__icon">
+                    <img src="./assets/falseIcon.svg" alt="" />
+                  </div>
+                </label>
+                <label
+                  class="answer w-[450px] justify-between bg-accent-red border-[1px] border-gray-300 h-[75px] rounded-sm px-[18px] flex items-center py-2 px-4 block cursor-pointer relative"
+                >
+                  <div class="answer__content flex items-center">
+                    <input
+                      name="answer4"
+                      type="checkbox"
+                      id="custom-checkbox"
+                      class="hidden peer"
+                      checked
+                    />
+                    <div
+                      class="w-5 h-5 bg-white border-2 border-gray-300 rounded cursor-pointer peer-checked:bg-black flex justify-center items-center peer-checked:border-transparent mr-[26px]"
+                    >
+                      <svg
+                        class="hidden peer-checked:block text-white w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 011.414 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L10 12.586l7.293-7.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <span class="text-white flex-1">Инженер - техник</span>
+                  </div>
+                  <div class="answer__icon">
+                    <img src="./assets/falseIcon.svg" alt="" />
+                  </div>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
