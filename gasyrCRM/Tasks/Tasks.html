@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accepted</title>
+    <title>Task</title>
     <link rel="stylesheet" href="../font.css" />
     <link rel="stylesheet" href="../../style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -287,9 +287,21 @@
     </div>
     <main class="main flex-1 pb-[100px]">
       <header
-        class="header shadow-[0px_4px_14px_0px_#0000000A] bg-white flex"
-        style="justify-content: right; border-left: 1px solid #c6c6c6"
+        class="header shadow-[0px_4px_14px_0px_#0000000A] bg-white flex pl-[40px] items-center"
+        style="justify-content: space-between; border-left: 1px solid #c6c6c6"
       >
+        <div class="header__content">
+          <h1
+            class="header__title text-black-main font-semibold text-[20px] leading-[24px] mb-[2px]"
+          >
+            Привет, Александр!
+          </h1>
+          <p
+            class="header__subtitle text-[14px] leading-[16px] font-regular text-black-main"
+          >
+            Тут вы сможете сдавать свое домашнее задание
+          </p>
+        </div>
         <div class="header__author">
           <div
             class="header__avatar border-l-[1px] border-[#C6C6C6] pl-[20px] pr-[75px] flex h-[90px] items-center"
@@ -322,159 +334,199 @@
         </div>
       </header>
       <div class="pt-[50px] ml-[40px] mr-[78px] max-w-[1040px]">
-        <div
-          class="course w-full h-[955px] flex bg-white shadow-[0px_4px_20px_0px_#00000014] rounded-md"
-        >
+        <div class="task__inner flex gap-[10px]">
           <div
-            class="course__info w-[280px] text-center items-center flex flex-col pt-[40px]"
+            class="task__list bg-white shadow-[0px_4px_24px_0px_#00000014] max-w-[360px] rounded-md pb-[50px]"
           >
-            <div class="course__info-img mb-[20px]">
-              <img src="./assets/итальянскийЯзыкКурсФото.png" alt="" />
-            </div>
             <h1
-              class="course__info-title font-semibold text-[24px] leading-[30px] text-black-main mb-[6px]"
+              class="tasks__list-title py-[32px] pl-[32px] font-semibold text-[20px] leading-[24px] text-black-main"
             >
-              Итальянский язык
+              Задания
             </h1>
-            <p
-              class="course__info-text text-[16px] mb-[28px] font-medium leading-[20px] text-black-main"
+            <div
+              class="task__list-item border-t-[1px] border-t-[#E5E5E5] bg-[#FAFAFA] flex p-[20px] items-center"
             >
-              Итальяно squad
-            </p>
-            <div class="course__info-avatar flex gap-[12px] items-center">
-              <img
-                src="./assets/елнурАватарФото.png"
-                alt=""
-                class="w-[32px] h-[32px] rounded-full"
-              />
-              <div
-                class="course__info-avatar--fullname font-semibold text-[16px] leading-[20px] text-black-main"
-              >
-                Ернур Алкашев
+              <div class="task__author-photo">
+                <img
+                  src="./assets/taskTeacherAuthor.png"
+                  class="w-[56px] h-[56px] rounded-full"
+                  alt=""
+                />
+              </div>
+              <div class="task__author-content ml-[12px]">
+                <h1
+                  class="task__teacher-title font-semibold text-[16px] leading-[22px] text-black-main max-w-[200px]"
+                >
+                  Учитель Адиль Амантай
+                </h1>
+                <h3
+                  class="task__teacher-status font-semibold text-[16px] leading-[22px] text-black-main mb-[5px]"
+                >
+                  добавил задание
+                </h3>
+                <p
+                  class="task__course text-[16px] leading-[22px] text-black-main font-regular"
+                >
+                  Математика SAT
+                </p>
+              </div>
+            </div>
+            <div
+              class="task__list-item border-t-[1px] border-t-[#E5E5E5] flex p-[20px] items-center"
+            >
+              <div class="task__author-photo">
+                <img
+                  src="./assets/taskTeacherAuthor.png"
+                  class="w-[56px] h-[56px] rounded-full"
+                  alt=""
+                />
+              </div>
+              <div class="task__author-content ml-[12px]">
+                <h1
+                  class="task__teacher-title font-semibold text-[16px] leading-[22px] text-black-main max-w-[200px]"
+                >
+                  Учитель Адиль Амантай
+                </h1>
+                <h3
+                  class="task__teacher-status font-semibold text-[16px] leading-[22px] text-black-main mb-[5px]"
+                >
+                  добавил задание
+                </h3>
+                <p
+                  class="task__course text-[16px] leading-[22px] text-black-main font-regular"
+                >
+                  Математика SAT
+                </p>
+              </div>
+              <div class="task__status ml-[15px]">
+                <img src="./assets/done.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="task__list-item border-t-[1px] border-t-[#E5E5E5] flex p-[20px] items-center"
+            >
+              <div class="task__author-photo">
+                <img
+                  src="./assets/taskTeacherAuthor.png"
+                  class="w-[56px] h-[56px] rounded-full"
+                  alt=""
+                />
+              </div>
+              <div class="task__author-content ml-[12px]">
+                <h1
+                  class="task__teacher-title font-semibold text-[16px] leading-[22px] text-black-main max-w-[200px]"
+                >
+                  Учитель Адиль Амантай
+                </h1>
+                <h3
+                  class="task__teacher-status font-semibold text-[16px] leading-[22px] text-black-main mb-[5px]"
+                >
+                  добавил задание
+                </h3>
+                <p
+                  class="task__course text-[16px] leading-[22px] text-black-main font-regular"
+                >
+                  Математика SAT
+                </p>
+              </div>
+              <div class="task__status ml-[15px]">
+                <img src="./assets/dontPass.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="task__list-item border-t-[1px] border-t-[#E5E5E5] flex p-[20px] items-center"
+            >
+              <div class="task__author-photo">
+                <img
+                  src="./assets/taskTeacherAuthor.png"
+                  class="w-[56px] h-[56px] rounded-full"
+                  alt=""
+                />
+              </div>
+              <div class="task__author-content ml-[12px]">
+                <h1
+                  class="task__teacher-title font-semibold text-[16px] leading-[22px] text-black-main max-w-[200px]"
+                >
+                  Учитель Адиль Амантай
+                </h1>
+                <h3
+                  class="task__teacher-status font-semibold text-[16px] leading-[22px] text-black-main mb-[5px]"
+                >
+                  добавил задание
+                </h3>
+                <p
+                  class="task__course text-[16px] leading-[22px] text-black-main font-regular"
+                >
+                  Математика SAT
+                </p>
+              </div>
+              <div class="task__status ml-[15px]">
+                <img src="./assets/done.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="task__list-item border-t-[1px] border-t-[#E5E5E5] flex p-[20px] items-center"
+            >
+              <div class="task__author-photo">
+                <img
+                  src="./assets/taskTeacherAuthor.png"
+                  class="w-[56px] h-[56px] rounded-full"
+                  alt=""
+                />
+              </div>
+              <div class="task__author-content ml-[12px]">
+                <h1
+                  class="task__teacher-title font-semibold text-[16px] leading-[22px] text-black-main max-w-[200px]"
+                >
+                  Учитель Адиль Амантай
+                </h1>
+                <h3
+                  class="task__teacher-status font-semibold text-[16px] leading-[22px] text-black-main mb-[5px]"
+                >
+                  добавил задание
+                </h3>
+                <p
+                  class="task__course text-[16px] leading-[22px] text-black-main font-regular"
+                >
+                  Математика SAT
+                </p>
+              </div>
+              <div class="task__status ml-[15px]">
+                <img src="./assets/dontPass.png" alt="" />
               </div>
             </div>
           </div>
-          <div
-            class="course__content bg-[#FAFAFA] min-h-full w-[760px] rounded-md pt-[12px] px-[40px] pb-[45px]"
-          >
-            <div class="course__content-day pt-[24px] gap-[12px] grid">
-              <h1
-                class="day__title text-center font-bold text-[16px] leading-[24px] text-[#9D9E9E]"
-              >
-                12 декабря
-              </h1>
-              <div class="course__content-message flex gap-[12px]">
-                <img
-                  src="./assets/елнурАватарФото.png"
-                  alt=""
-                  class="w-[42px] h-[42px] rounded-full"
-                />
-                <div
-                  class="course__content-message--content bg-[#FFFFFF] shadow-[0px_4px_24px_0px_#0000000A] rounded-md p-[20px] w-full grid gap-[6px]"
+          <div class="about__task bg-white shadow-[0px_4px_24px_0px_#00000014] rounded-md w-[670px] pt-[32px] pl-[42px] pr-[42px]">
+            <p class="about__task-time font-regular text-[14px] leading-[20px] text-black-main mb-[6px]">
+              Срок заканчивается 12.09.2024 г. в 18:00
+            </p>
+            <h1 class="about__task-title font-bold text-[24px] leading-[33px] text-black-main max-w-[520px] mb-[20px]">
+              Формирование антикоррупционной культуры в зарубежных странах
+            </h1>
+            <div class="download__task mb-[20px]">
+              <h3 class="download__task-title font-bold text-[16px] leading-[22px] text-black-main mb-[6px]">Задание</h3>
+              <button class="flex py-[19px] px-[17px] gap-[17px] border-[1px] border-[#E5E5E5] rounded-md">
+                <img src="./assets/documentIconFrom.png" alt="" /><span class="font-regular text-[14px] leading-[16px] text-black-main"
+                  >Домашка №1. Формирование антикора</span
                 >
-                  <h1 class="message__author-fullname text-[12px] leading-[14px] font-semibold text-[#583ACF] ">Ернур Алкашев</h1>
-                  <p class="message__author-text text-black-main font-medium text-[16px] leading-[24px] ">
-                    Здравствуйте, дети! Завтра не забудьте про то что у нас
-                    контрольная, не забудьте подготовиться. Будет очень трудно.
-                  </p>
-                  <div class="message__author-date text-[12px] leading-[18px] text-[#B5B5B5] font-medium">
-                    12 декабря <span>12:34</span>
-                  </div>
-                </div>
-              </div>
-              <div class="course__content-message flex gap-[12px]">
-                <img
-                  src="./assets/елнурАватарФото.png"
-                  alt=""
-                  class="w-[42px] h-[42px] rounded-full"
-                />
-                <div
-                  class="course__content-message--content bg-[#FFFFFF] shadow-[0px_4px_24px_0px_#0000000A] rounded-md p-[20px] w-full grid gap-[6px]"
-                >
-                  <h1 class="message__author-fullname text-[12px] leading-[14px] font-semibold text-[#583ACF] ">Ернур Алкашев</h1>
-                  <p class="message__author-text text-black-main font-medium text-[16px] leading-[24px] ">
-                    Здравствуйте, дети! Завтра не забудьте про то что у нас
-                    контрольная, не забудьте подготовиться. Будет очень трудно.
-                  </p>
-                  <div class="message__author-date text-[12px] leading-[18px] text-[#B5B5B5] font-medium">
-                    12 декабря <span>12:34</span>
-                  </div>
-                </div>
-              </div>
+              </button>
             </div>
-            <div class="course__content-day pt-[24px] gap-[12px] grid">
-              <h1
-                class="day__title text-center font-bold text-[16px] leading-[24px] text-[#9D9E9E]"
+            <div class="send__task">
+              <h3 class="send__task-title font-bold text-[16px] leading-[22px] text-black-main mb-[12px]">Моя работа</h3>
+              <label
+                class="flex gap-[14px] items-center"
+                for="file-upload"
               >
-              15 декабря
-              </h1>
-              
-              <div class="course__content-message flex gap-[12px]">
-                <img
-                  src="./assets/елнурАватарФото.png"
-                  alt=""
-                  class="w-[42px] h-[42px] rounded-full"
-                />
-                <div
-                  class="course__content-message--content bg-[#FFFFFF] shadow-[0px_4px_24px_0px_#0000000A] rounded-md p-[20px] w-full grid gap-[6px]"
-                >
-                  <h1 class="message__author-fullname text-[12px] leading-[14px] font-semibold text-[#583ACF]">Ернур Алкашев</h1>
-                  <div class="message__task flex items-center py-[16px] px-[12px] border-[1px] border-[#CCCCCC] rounded-sm gap-[16px]">
-                    <img src="./assets/заданияИконкаВЗаданий.png" alt="" class="max-w-[42px] max-h-[42px] rounded-full">
-                    <div class="task__content">
-                      <h1 class="task__title text-[12px] leading-[16px] text-[#9D9E9E] font-bold">Задание от учителя</h1>
-                      <p class="task__text leading-[20px] text-[14px] text-black-main font-bold">Формирование антикоррупционной культуры в зарубежных странах</p>
-                      <p class="deadline text-[12px] text-black-main font-regular leading-[16px]">Срок до 12.12.2024 12:30</p>
-                    </div>
-                  </div>
-                  <div class="message__author-date text-[12px] leading-[18px] text-[#B5B5B5] font-medium">
-                    15 декабря <span>12:34</span>
-                  </div>
-                </div>
-              </div>
-              <div class="course__content-message flex gap-[12px]">
-                <img
-                  src="./assets/елнурАватарФото.png"
-                  alt=""
-                  class="w-[42px] h-[42px] rounded-full"
-                />
-                <div
-                  class="course__content-message--content bg-[#FFFFFF] shadow-[0px_4px_24px_0px_#0000000A] rounded-md p-[20px] w-full grid gap-[6px]"
-                >
-                  <h1 class="message__author-fullname text-[12px] leading-[14px] font-semibold text-[#583ACF]">Ернур Алкашев</h1>
-                  <div class="message__task flex items-center py-[16px] px-[12px] border-[1px] border-[#CCCCCC] rounded-sm gap-[16px]">
-                    <img src="./assets/заданияИконкаВЗаданий.png" alt="" class="max-w-[42px] max-h-[42px] rounded-full">
-                    <div class="task__content">
-                      <h1 class="task__title text-[12px] leading-[16px] text-[#9D9E9E] font-bold">Задание от учителя</h1>
-                      <p class="task__text leading-[20px] text-[14px] text-black-main font-bold">Создание веб-сайта на языке JavaScript с последними новыми обновлениями</p>
-                      <p class="deadline text-[12px] text-black-main font-regular leading-[16px]">Срок до 12.12.2024 12:30</p>
-                    </div>
-                  </div>
-                  <div class="message__author-date text-[12px] leading-[18px] text-[#B5B5B5] font-medium">
-                    15 декабря <span>12:34</span>
-                  </div>
-                </div>
-              </div>
-              <div class="course__content-message flex gap-[12px]">
-                <img
-                  src="./assets/елнурАватарФото.png"
-                  alt=""
-                  class="w-[42px] h-[42px] rounded-full"
-                />
-                <div
-                  class="course__content-message--content bg-[#FFFFFF] shadow-[0px_4px_24px_0px_#0000000A] rounded-md p-[20px] w-full grid gap-[6px]"
-                >
-                  <h1 class="message__author-fullname text-[12px] leading-[14px] font-semibold text-[#583ACF]">Ернур Алкашев</h1>
-                  <div class="conference flex justify-between h-[54px] items-center border-[1px] border-[#CCCCCC] rounded-sm pr-[6px] pl-[20px]">
-                    <span class="text-black-main text-[12px] leading-[18px] font-medium">Конференция</span>
-                    <button class="text-white py-[11px] px-[43px] bg-accent-red rounded-sm text-[14px] leading-[20px] font-semibold">Войти на урок</button>
-                  </div>
-                  <div class="message__author-date text-[12px] leading-[18px] text-[#B5B5B5] font-medium">
-                    15 декабря <span>12:34</span>
-                  </div>
-                </div>
-              </div>
+              <img src="./assets/downloadIconFrom.png" class="max-w-[20px] max-h-[18px]" alt=""><span class="font-medium text-[14px] leading-[16px] text-accent-red">Загрузить работу</span>
+              </label>
+              <input
+                type="file"
+                id="file-upload"
+                name="file-upload"
+                style="display: none;"
+              />
             </div>
+            <button class="done__task mt-[110px] py-[15px] px-[26px] rounded-sm bg-accent-red text-white text-[16px] leading-[22px] font-semibold">Сдать мою работу</button>
           </div>
         </div>
       </div>
