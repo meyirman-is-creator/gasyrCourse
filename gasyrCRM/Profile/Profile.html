@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../font.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../tailwindCDNmodule.js"></script>
+</head>
+
+<body class="bg-[#fafafa]">
+    <header class="header shadow-[0px_4px_14px_0px_#0000000A] bg-white flex pl-[40px] items-center"
+        style="justify-content: space-between; border-left: 1px solid #c6c6c6">
+        <div class="header__left flex">
+            <a href="#" class="header__logo flex items-center mr-[50px]">
+                <img src="../../assets/GasyrLogoBlack.png" alt="">
+            </a>
+            <div
+                class="header__left-text border-l-[1px] border-[#C6C6C6] h-[90px] pl-[45px] flex flex-col justify-center">
+                <h1 class="header__title text-black-main font-semibold text-[20px] leading-[24px] mb-[2px]">
+                    Привет, Александр!
+                </h1>
+                <p class="header__subtitle text-[14px] leading-[16px] font-regular text-black-main">
+                    Тут вы сможете сдавать свое домашнее задание
+                </p>
+            </div>
+
+        </div>
+        <div class="header__author">
+            <div class="header__avatar border-l-[1px] border-[#C6C6C6] pl-[20px] pr-[75px] flex h-[90px] items-center">
+                <img src="../../assets/avatar.png" alt="" class="avatar-photo w-[60px] h-[60px] mr-[13px]" />
+                <div class="avatar__info mr-[30px]">
+                    <div class="avatar__name text-black-main text-[20px] leading-[24px] font-bold">
+                        Александр О.
+                    </div>
+                    <div class="avatar__role leading-[20px] text-black-main font-medium text-[16px]">
+                        Студент
+                    </div>
+                </div>
+                <button class="avatar__more">
+                    <img src="../../assets/moreAboutAvatar.png" alt="" class="avatar__more-icon w-[24px] h-[24px]" />
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="profile__main ">
+        <div
+            class="cotainer w-[1320px] mx-[auto] mt-[32px] bg-white pt-[45px] pl-[42px] pb-[62px] rounded-md flex gap-[60px]">
+            <div class="profile__photo flex flex-col items-center">
+                <img src="./assets/profileTemplate.png" alt=""
+                    class="max-h-[210px] max-w-[210px] rounded-full mb-[20px]">
+                <label for="photo" class="flex items-center gap-[15px] text-[#5E8BFF]"><img
+                        src="./assets/downloadBlueIcon.png" alt="" class="max-h-[20px] max-w-[20px]"><span
+                        class="font-semibold text-[16px] leading-[18px] ">Загрузить фото</span></label>
+                <input type="file" name="" style="display: none;" id="photo">
+            </div>
+            <div class="profile__inner grid gap-[20px]">
+                <div class="grid grid-cols-2 gap-[20px]">
+                    <div class="flex flex-col gap-[5px]">
+                        <label class="block text-black-main text-[16px] font-bold mb-[5px] leading-[22px] uppercase"
+                            for="fullname">
+                            ИМЯ И ФАМИЛИЯ
+                        </label>
+                        <input type="text" id="fullname" placeholder="Имя и фамилия"
+                            class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px]">
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <label class="block text-black-main text-[16px] font-bold mb-[5px] leading-[22px] uppercase"
+                            for="phone">
+                            НОМЕР ТЕЛЕФОНА
+                        </label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <img src="./assets/🇰🇿.png" alt="">
+                            </span>
+                            <input type="tel" id="phone" placeholder="Номер телефона"
+                                class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px] pl-[54px]">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <label class="block text-black-main text-[16px] font-bold mb-[5px] leading-[22px] uppercase">
+                            Город
+                        </label>
+                        <div class="relative">
+                            <select id="city"
+                                class="block appearance-none w-[340px] h-[72px] bg-white border border-gray-300 text-black-main pl-[50px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline text-regular text-[16px]">
+                                <option>Алматы</option>
+                                <option>Астана</option>
+                                <option>Актау</option>
+                                <option>Актобе</option>
+
+                            </select>
+                            <div
+                                class="pointer-events-none absolute inset-y-0 left-[15px] flex items-center px-2 text-gray-700">
+                                <img src="./assets/cityMore.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[5px]">
+                        <label class="block text-black-main text-[16px] font-bold mb-[5px] leading-[22px] uppercase"
+                            for="email">
+                            ЭЛЕКТРОННАЯ ПОЧТА
+                        </label>
+                        <input type="email" id="email" placeholder="Добавьте свою эл. почту"
+                            class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px]">
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <label class="block text-black-main text-[16px] font-bold mb-[5px] leading-[22px] uppercase"
+                        for="change-password">
+                        ИЗМЕНИТЬ ПАРОЛЬ
+                    </label>
+                    <div class="grid grid-cols-2 gap-[20px]">
+                        <div>
+                            <input type="password" placeholder="Старый пароль" disabled
+                                class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px]">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Новый пароль" disabled
+                                class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px]">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Повторите старый пароль" disabled
+                                class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px]">
+                        </div>
+
+                        <div >
+                            <input type="password" placeholder="Повторите новый пароль" disabled
+                                class="block appearance-none h-[72px] bg-white border-[1px] border-[#CDCDCD] text-black-main px-[16px] rounded-sm leading-[22px] focus:outline-none focus:shadow-outline w-[340px]">
+                        </div>
+                    </div>
+                </div>
+                <div class="space-x-4 justify-between w-full flex">
+                    <button
+                        class="bg-accent-red font-semibold text-white px-[40px] h-[60px] flex items-center rounded-sm">
+                        Поменять пароль
+                    </button>
+                    <button
+                        class="bg-white border-[1px] border-accent-red text-accent-red font-semibold  px-[40px] h-[60px] flex items-center  rounded-sm">
+                        Сохранить изменения
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
