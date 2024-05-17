@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Mentor</title>
+    <title>Main With User</title>
     <link rel="stylesheet" href="../../../font.css" />
     <link rel="stylesheet" href="../../../style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -115,11 +115,27 @@
             <div class="add__user bg-white shadow-[0px_4px_20px_0px_#00000014]  rounded-md p-[32px] pt-[42px]">
                 <h3 class=" font-semibold mb-[24px] text-black-main text-[32px] leading-[40px]">Добавить ученика в
                     систему Gasyr</h3>
-                <div class="relative">
-                    <input type="text" placeholder="Введите ID или имя ученика"
+                <div class="relative mb-[6px]">
+                    <input value="142-124" type="text" placeholder="Введите ID или имя ученика"
                         class="w-full pl-[32px] pr-[70px] text-black-main text-[20px] leading-[32px] font-medium border-[#CDCDCD] border-[1px] h-[80px] items-center flex rounded-md focus:outline-none">
                     <div class="absolute right-[30px] top-[30px] pointer-events-none">
                         <img src="./assets/searchIconMentor.svg" alt="" class="max-w-[24px] max-h-[24px]">
+                    </div>
+                </div>
+                <div class="border-[1px] border-[#CDCDCD] rounded-md pt-[32px] pl-[32px] pr-[37px] pb-[24px]">
+                    <div class="newUser flex justify-between items-center mb-[20px]">
+                        <div class="fullname flex gap-[20px] items-center">
+                            <img src="./assets/newUserIcon.png" alt="" class="max-w-[32px] max-h-[32px] rounded-full">
+                            <p class="fullname-text font-semibold text-[20px] leading-[32px] text-black-main">Аслан Амангельдин</p>
+                        </div>
+                        <p class="newUser-phonenumber text-[20px] font-regular leading-[32px] text-black-main">+7 (778) 787 87 92</p>
+                        <p class="newUser-city text-[20px] font-regular leading-[32px] text-black-main">г. Кокшетау</p>
+                        <p class="newUser-id font-semibold text-[20px] leading-[32px] text-black-main">142-124</p>
+
+                    </div>
+                    <div class="newUser__btns flex gap-[8px]">
+                        <button class="py-[18px] px-[42px] rounded-sm font-semibold text-[16px] leading-[22px] text-white bg-accent-red">Принять</button>
+                        <button class="py-[18px] px-[42px] rounded-sm font-semibold text-[16px] leading-[22px] text-accent-red bg-white border-[1px] border-accent-red">Отклонить</button>
                     </div>
                 </div>
             </div>
