@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../../../font.css" />
+    <link rel="stylesheet" href="../../../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../../../tailwindCDNmodule.js"></script>
+</head>
+
+<body class="bg-[#fafafa]">
+    <header class="header shadow-[0px_4px_14px_0px_#0000000A] bg-white flex pl-[40px] items-center"
+        style="justify-content: space-between; border-left: 1px solid #c6c6c6">
+        <div class="header__left flex">
+            <a href="#" class="header__logo flex items-center mr-[50px]">
+                <img src="../../assets/GasyrLogoBlack.png" alt="">
+            </a>
+
+        </div>
+        <div class="header__author">
+            <div class="header__avatar border-l-[1px] border-[#C6C6C6] pl-[20px] pr-[75px] flex h-[90px] items-center">
+                <img src="../../assets/avatar.png" alt="" class="avatar-photo w-[60px] h-[60px] mr-[13px]" />
+                <div class="avatar__info mr-[30px]">
+                    <div class="avatar__name text-black-main text-[20px] leading-[24px] font-bold">
+                        Ернур А.
+                    </div>
+                    <div class="avatar__role leading-[20px] text-black-main font-medium text-[16px]">
+                        Психолог
+                    </div>
+                </div>
+                <button class="avatar__more">
+                    <img src="../../assets/moreAboutAvatar.png" alt="" class="avatar__more-icon w-[24px] h-[24px]" />
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="profile__main w-[1040px] mx-[auto]">
+        <div class="flex items-center justify-between mb-[24px] mt-[40px]">
+            <h1 class="font-bold text-black-main text-[42px]">
+                Запись к психологу
+            </h1>
+            <div
+                class="switch__date p-4 flex gap-5 h-15 items-center bg-white shadow-[0px_4px_20px_0px_#0000000A] rounded-md">
+                <button class="previous__date">
+                    <img src="./assets/предыдущиеНеделиИконка.png" alt="" />
+                </button>
+                <div class="switch__date-text">20-26 марта</div>
+                <button class="previous__date">
+                    <img src="./assets/следующаяНеделиИконка.png" alt="" />
+                </button>
+            </div>
+        </div>
+        <div class="days flex justify-between p-6 pl-[33px] bg-white rounded-md items-center mb-3">
+            <h1 class="days__choose text-[32px] leading-[40px] text-black-main font-bold">
+                Выберите день
+            </h1>
+            <div class="days__items flex gap-[10px]">
+                <div
+                    class="days__item rounded-[10px] pt-3 text-white font-bold pb-3 w-[102px] flex flex-col bg-accent-red">
+                    <span class="text-[14px] font-bold leading-[14px] block text-center">Апрель</span><span
+                        class="block text-center text-[42px] leading-[52px] font-bold">20</span><span
+                        class="block text-center text-[14px] uppercase leading-[14px] font-bold">пн</span>
+                </div>
+                <div
+                    class="days__item rounded-[10px] border-[1px] border-accent-red pt-3 text-accent-red font-bold pb-3 w-[102px] flex flex-col">
+                    <span class="text-[14px] font-bold leading-[14px] block text-center">Апрель</span><span
+                        class="block text-center text-[42px] leading-[52px] font-bold">21</span><span
+                        class="block text-center text-[14px] uppercase leading-[14px] font-bold">вт</span>
+                </div>
+                <div
+                    class="days__item rounded-[10px] border-[1px] border-accent-red pt-3 text-accent-red font-bold pb-3 w-[102px] flex flex-col">
+                    <span class="text-[14px] font-bold leading-[14px] block text-center">Апрель</span><span
+                        class="block text-center text-[42px] leading-[52px] font-bold">22</span><span
+                        class="block text-center text-[14px] uppercase leading-[14px] font-bold">ср</span>
+                </div>
+                <div
+                    class="days__item rounded-[10px] border-[1px] border-[#9D9E9E] pt-3 text-[#9D9E9E] font-bold pb-3 w-[102px] flex flex-col">
+                    <span class="text-[14px] font-bold leading-[14px] block text-center">Апрель</span><span
+                        class="block text-center text-[42px] leading-[52px] font-bold">23</span><span
+                        class="block text-center text-[14px] uppercase leading-[14px] font-bold">чт</span>
+                </div>
+                <div
+                    class="days__item rounded-[10px] border-[1px] border-[#9D9E9E] pt-3 text-[#9D9E9E] font-bold pb-3 w-[102px] flex flex-col">
+                    <span class="text-[14px] font-bold leading-[14px] block text-center">Апрель</span><span
+                        class="block text-center text-[42px] leading-[52px] font-bold">24</span><span
+                        class="block text-center text-[14px] uppercase leading-[14px] font-bold">пт</span>
+                </div>
+                <div
+                    class="days__item rounded-[10px] border-[1px] border-accent-red pt-3 text-accent-red font-bold pb-3 w-[102px] flex flex-col">
+                    <span class="text-[14px] font-bold leading-[14px] block text-center">Апрель</span><span
+                        class="block text-center text-[42px] leading-[52px] font-bold">25</span><span
+                        class="block text-center text-[14px] uppercase leading-[14px] font-bold">сб</span>
+                </div>
+            </div>
+        </div>
+        <div class="lessons__today mt-[20px] bg-white shadow-[0px_4px_20px_0px_#0000000A] rounded-md p-[32px]">
+            <div class="lessons__texts flex justify-between mb-[18px] items-center">
+              <h1 class="lessons__title font-bold text-black-main text-[24px] leading-[30px]">
+                Временные окошки
+              </h1>
+              <button class="flex p-[16px] pr-[30px] rounded-sm border-[1px] border-accent-red items-center gap-[15px] ">
+                <img src="./assets/addOfficeHours.svg" alt="" class="max-w-[20px] max-h-[20px] rounded-full">
+                <span class="font-semibold text-[16px] leading-[24px] text-accent-red">Добавить свободные окошки</span>
+              </button>
+            </div>
+            <ul class="lessons__items bg-[#FAFAFA] py-[24px] px-[24px] flex items-center justify-center gap-[48px]">
+              <img src="./assets/empty1-bg.png" alt="" class="max-w-[215px] max-h-[215px]">
+              <p class="empty-text max-w-[210px] font-semibold text-[24px] leading-[36px] text-black-main">Окошек на этот день еще нет</p>
+            </ul>
+          </div>
+    </main>
+
+</body>
+
+</html>
